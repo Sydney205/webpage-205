@@ -49,7 +49,7 @@ export default function Navbar() {
       </a>
 
       {/* Desktop Menu */}
-      <div className="w-full md:w-max font-thin">
+      <div className="w-full md:w-max font-thin flex justify-center items-center">
         {links.map(([index, title, route]) => (
           <a
             key={index}

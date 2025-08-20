@@ -19,49 +19,14 @@ ChartJS.register(
   Legend,
 );
 
-// const shadowPlugin = {
-//   id: "barShadow",
-//   beforeDatasetsDraw: (chart: any) => {
-//     const ctx = chart.ctx;
-//     ctx.save();
-
-//     const dataset = chart.getDatasetMeta(0);
-//     const data = chart.data.datasets[0];
-
-//     dataset.data.forEach((bar: any, index: number) => {
-//       const bgColor =
-//         Array.isArray(data.backgroundColor) && data.backgroundColor[index]
-//           ? data.backgroundColor[index]
-//           : data.backgroundColor as string;
-
-//       ctx.shadowColor = bgColor.replace("0.4", "0.7"); // make the shadow stronger
-//       ctx.shadowBlur = 15;
-//       ctx.shadowOffsetX = 4;
-//       ctx.shadowOffsetY = 4;
-
-//       ctx.fillStyle = bgColor;
-//       ctx.fillRect(bar.x - bar.width / 2, bar.y, bar.width, bar.base - bar.y);
-//     });
-
-//     ctx.restore();
-//   },
-//   afterDatasetsDraw: (chart: any) => {
-//     chart.getDatasetMeta(0).data.forEach((bar: any) => {
-//       bar.draw = () => {};
-//     });
-//   }
-// };
-
-
 const BarChart = () => {
   const data = {
     labels: [
       "JavaScript",
       "TypeScript",
-      "React",
+      "TSX/JSX",
       "Python",
-      "Flask",
-      "Pandas",
+      "MD/MDX",
       "Notebook",
       "SQL",
     ],
