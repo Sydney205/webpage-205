@@ -67,7 +67,7 @@ function App() {
             </div>
 
             <p className="my-3">Developer</p>
-            <div className="w-max flex justify-start items-center gap-2 text-white cursor-pointer hover:text-red-400">
+            <div className="w-max flex justify-start items-center gap-2 text-white cursor-pointer hover:text-red-400 gap-">
               <FaRegEnvelope
                 className="rounded-md text-zinc-700 hover:text-gray-300"
                 size={"1.2rem"}
@@ -75,11 +75,18 @@ function App() {
               diekechi@gmail.com
             </div>
             <div className="w-max flex justify-start items-center gap-2 text-white cursor-pointer hover:text-red-400">
-              <FaRegEnvelope
+              <div className="w-[1.2rem]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="#3f3f46" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+              </div>{" "}
+              @Sydney2O5
+            </div>
+            <div className="w-max flex justify-start items-center gap-2 text-white cursor-pointer hover:text-red-400">
+              <FaLinkedinIn 
                 className="rounded-md text-zinc-700 hover:text-gray-300"
                 size={"1.2rem"}
               />{" "}
-              @Sydney2O5
+              Dieke Sydney
             </div>
 
 

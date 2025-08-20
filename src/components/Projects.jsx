@@ -18,12 +18,12 @@ export default function Projects() {
           ? item.site
           : item.github
         }
-        className="card w-full h-full flex flex-col justify-between items-start p-4 md:border-[1.98px] border-neutral-500 hover:cursor-pointer"
+        className="card w-full h-full md:h-max lg:h-full flex flex-col justify-between items-start p-4 border border-transparent hover:bg-zinc-800/30 hover:border-white hover:border-neutral-800 hover:bg-aqua_green hover:cursor-pointer"
       >
         <span className="w-full h-max">
           <span className="flex gap-2 mb-2">
-            <span className="font-bold">{item.name}</span>
-            <span
+            <p className="font-bold">{item.name}</p>
+            <p
               className={
                 item.status == "Live"
                   ? "h-max border border-green-600 rounded-xl text-green-600 text-md py-[2px] px-2"
@@ -41,9 +41,9 @@ export default function Projects() {
               }
             >
               {item.status}
-            </span>
+            </p>
           </span>
-          <span className="flex text-sm text-base">{item.desc}</span>
+          <p className="flex text-sm text-base">{item.desc}</p>
         </span>
 
         <span className="w-[90%] md:w-full lg:w-[90%] mt-5 flex flex-wrap flex-row-reverse justify-between items-center gap-2">
@@ -80,8 +80,8 @@ export default function Projects() {
     >
       <span className="w-full h-max">
         <span className="flex gap-2 mb-2">
-          <span className="font-bold">{item.name}</span>
-          <span
+          <p className="font-bold">{item.name}</p>
+          <p
             className={
               item.status == "Live"
                 ? "h-max border border-green-600 rounded-xl text-green-600 text-sm py-[2px] px-2"
@@ -99,9 +99,9 @@ export default function Projects() {
             }
           >
             {item.status}
-          </span>
+          </p>
         </span>
-        <span className="flex text-[2px]">{item.desc}</span>
+        <p className="flex text-sm text-base">{item.desc}</p>
       </span>
 
       <span className="w-[90%] md:w-full lg:w-[90%] mt-5 flex flex-wrap flex-row-reverse justify-between items-center gap-2">

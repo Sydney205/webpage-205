@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 @font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist/GeistVariableVF.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "Lato";
   src: url("./assets/Lato/Lato-Regular.ttf") format("truetype");
   font-weight: 400;
@@ -93,7 +98,7 @@ body {
   /*   linear-gradient(135deg, #00bfff, #ffff66, #ff69b4), */
   /*   linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px), */
   /*   linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px); */
-  font-family: 'Lato';
+  font-family: 'Geist';
   font-weight: 400;
   background-size: 40px 40px;
   background-attachment: fixed;
@@ -179,7 +184,7 @@ button {
   }
 
   p {
-    @apply md:text-lg transition-all duration-150 ease-out;
+    @apply md:text-base transition-all duration-150 ease-out;
   }
 
   /* section { */
